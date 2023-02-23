@@ -1,0 +1,96 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: whitesmoke;
+}
+/*Items Botones*/
+nav {
+    background-color: #c790bc;
+}
+nav img{
+    width:20%; 
+    height:;
+}
+.list-group{
+
+    --bs-list-group-bg: transparent;
+    --bs-list-group-border-width: none;
+}
+a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+a:hover {
+    color: #47063a;
+}
+.table{
+    margin-top: 10rem;
+    
+}
+/*----Formulario---*/
+
+.form-container{
+    font:95% Arial,helvetica,sans-serif;
+    max-width: 700px;
+    padding: 16px;
+    margin: 10px auto;
+    background: #f7f7f7;
+    margin-top: 3rem;
+}
+.form-container h1{
+    background: #47063a;
+    padding: 20px;
+    font-size: 40px;
+    font-weight: 300px;
+    text-align: center;
+    color: #fff;
+    margin: -16px -16px 16px -16px;
+
+}
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container textarea{
+    transition: all 0,30% ease-in-out;
+    outline: none;
+    box-sizing: border-box;
+    width: 100%;
+    background: #fff;
+    margin-bottom: 4%;
+    border: 1px solid #ccc;
+    padding: 3%;
+    color: #555;
+    font: 95% Arial, Helvetica, sans-serif;
+}
+.form-container .btn-send {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 3%;
+    background:#47063a;
+    border-bottom: 2% solid #c790bc;
+    border-top-style: none;
+    border-left-style: none;
+    border-right-style: none;
+    border-bottom-style: none;
+    color: #fff;
+    font-size: 20px;
+}
+.form-container .btn-send:hover{
+    background:#c790bc;
+}
+footer{
+    margin-top: 5rem; 
+    width: 100%;
+    height: 5rem;
+     background-color: #c790bc;
+    text-align: right;
+    color:black;
+    padding: 15px 10px;
+    font-family: Helvetica, Arial,  sans-serif;
+    top:4rem;
+    color:black;
+    font-size: 1.5rem;
+    padding:2rem;
+}
+
