@@ -8,11 +8,16 @@ body{
 /*Items Botones*/
 nav {
     background-color: #c790bc;
+
 }
 nav img{
-    width:20%; 
+    width:30%; 
     height:;
 }
+.navbar{
+       --bs-navbar-padding-y: 2rem; 
+}
+
 .list-group{
 
     --bs-list-group-bg: transparent;
@@ -25,8 +30,27 @@ a{
 a:hover {
     color: #47063a;
 }
+ /* Header */
+
+header{
+    width: 100%;
+    
+    padding: 1rem;
+    box-shadow: 0px 0px 15px rgba(0,0,0,.35);
+    --bs-card-border-radius: 0.700rem;
+  }
+
+header h1{
+    text-align: center;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+/*  Formulario de Contacto */
 .table{
     margin-top: 10rem;
+    
+
     
 }
 /*----Formulario---*/
@@ -38,6 +62,7 @@ a:hover {
     margin: 10px auto;
     background: #f7f7f7;
     margin-top: 3rem;
+     box-shadow:0 0 3rem #a071af;
 }
 .form-container h1{
     background: #47063a;
@@ -79,18 +104,23 @@ a:hover {
 .form-container .btn-send:hover{
     background:#c790bc;
 }
-footer{
-    margin-top: 5rem; 
+footer {
+    margin-top: 40px;
+    background-color: #c790bc;
+    padding: 20px;
     width: 100%;
-    height: 5rem;
-     background-color: #c790bc;
-    text-align: right;
-    color:black;
-    padding: 15px 10px;
-    font-family: Helvetica, Arial,  sans-serif;
-    top:4rem;
-    color:black;
-    font-size: 1.5rem;
-    padding:2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
 }
+footer .redes-sociales a{
+    color: white;
+    margin-left: 20px;
+}
+footer .autor p{
+    color:black;
+    margin-right: 20px;
+}
+
 

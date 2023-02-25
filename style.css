@@ -7,7 +7,14 @@ body{
 }
 /*Items Botones*/
 nav {
-    background-color: #c790bc;
+    background-color: #c790bc;margin
+
+}
+.navbar{
+       --bs-navbar-padding-y: 2rem; 
+}
+footer .navbar.navbar-links.bg-ligth{
+    --bs-navbar-padding-y: 1rem; 
 }
 nav img{
     width:30%; 
@@ -25,15 +32,13 @@ a{
 a:hover {
     color: #47063a;
 }
-/*--Planilla Stats*/
 
 
 
 /*  --- Header---- */
 header{
     width: 100%;
-    margin-top: 4rem;
-    padding: 1rem;
+   padding: 1rem;
     box-shadow: 0px 0px 15px rgba(0,0,0,.35);
     --bs-card-border-radius: 0.700rem;
   
@@ -54,16 +59,41 @@ main fieldset{
     justify-content: space-between;
 
 }
+article {
+    margin-bottom: 20px;
+   
+    background-color: #47063a;
+    color: whitesmoke;
+
+}
+
+main .bg-light{
+    box-shadow:0 0 2rem #a071af;
+}
+
+
+.parrafo.text-center p {
+    padding: 10px;
+    margin-bottom: 25px;
+    line-height: 27px;
+    font-size: 14px;
+}
 .bg-body-tertiary{
     margin-top: 3rem;
     margin: 2rem;
     width:90%;
+    border: 1px solid black;
     border-color: #47063a;
-    box-shadow: 0 0 2rem #a071af;
+    box-shadow: 0 0 3rem #a071af;
     border-radius: 0.9rem;
     
 
   }
+  .table{
+    margin-top: 10rem;
+    border: 1px solid black;
+}
+    
   
   th{
       background-color: #c790bc;
@@ -143,24 +173,31 @@ th, td {
     justify-content: space-around;
     margin-bottom: 0.5rem;
 }
-
-
-
-
-footer{
-    margin-top: 5rem; 
+footer {
+    margin-top: 30px;
+    background-color: #c790bc;
+    padding: 20px;
     width: 100%;
-    height: 5rem;
-     background-color: #c790bc;
-    text-align: right;
-    color:black;
-    padding: 15px 10px;
-    font-family: Helvetica, Arial,  sans-serif;
-    top:4rem;
-    color:black;
-    font-size: 1.5rem;
-    padding:2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
 }
+footer .redes-sociales a{
+    color: white;
+    margin-left: 20px;
+}
+footer .autor p{
+    color:black;
+    margin-right: 20px;
+}
+
+
+
+
+
+
+
 
 /*-- @Mediaquery---*/
 
@@ -168,6 +205,20 @@ footer{
     p.card-text{
         font-size:1rem;
       
+    }
+}
+
+
+@media screen and (max-width: 360px){
+    .list-group{
+        font-size:11px ;
+
+    }
+}
+@media screen and (max-width: 360px){
+    .footer .p{
+        font-size: 11px;
+
     }
 }
 
