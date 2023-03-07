@@ -7,19 +7,17 @@ body{
 }
 /*Items Botones*/
 nav {
-    background-color: #c790bc;margin
+    background-color: #c790bc;
 
 }
 .navbar{
-       --bs-navbar-padding-y: 2rem; 
+    --bs-navbar-padding-y: 2rem; 
 }
 
-footer .navbar.navbar-links.bg-ligth{
-    --bs-navbar-padding-y: 1rem; 
-}
+
 nav img{
     width:30%; 
-    height:;
+    
 }
 .list-group{
 
@@ -145,6 +143,8 @@ th, td {
 
 .card{
     margin-top: 4rem;
+    width: 18rem;
+    height: 30rem;
 
 }
 
