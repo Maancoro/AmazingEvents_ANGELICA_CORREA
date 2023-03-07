@@ -13,6 +13,7 @@ nav {
 .navbar{
        --bs-navbar-padding-y: 2rem; 
 }
+
 footer .navbar.navbar-links.bg-ligth{
     --bs-navbar-padding-y: 1rem; 
 }
@@ -149,7 +150,6 @@ th, td {
 
 .btn-primary {
     margin-top: 1rem;
-    con
     --bs-btn-color: #fff;
     --bs-btn-bg: #47063a;
     --bs-btn-border-color: #c790bc;
