@@ -147,6 +147,9 @@ th, td {
     height: 30rem;
 
 }
+.card-img{
+    height:4rem;
+}
 
 .btn-primary {
     margin-top: 1rem;
@@ -171,8 +174,10 @@ th, td {
 .footer-card {
     display: flex;
     justify-content: space-around;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0rem;
+    
 }
+
 footer {
     margin-top: 30px;
     background-color: #c790bc;
