@@ -1,6 +1,6 @@
 import data from "./data.js"
 
-function agregarTodos(array) {
+function agregarCards(array) {
   const cards = array.events.map((evento) => {
     return `<div class="col">
       <div class="card">
@@ -11,7 +11,7 @@ function agregarTodos(array) {
           <p class="card-text">${evento.description}</p>
           <div class="footer-card d-flex">
              <p><strong>Precio $${evento.price}</strong></p>
-            <a href="./details.html" class="btn btn-primary">ver mas</a>
+            <a href="./details.html?id=${evento._id}" class="btn btn-primary">ver mas</a>
           </div>
         </div>
       </div>
@@ -22,4 +22,19 @@ function agregarTodos(array) {
   cardSection.innerHTML = cards.join("");
 }
 
-agregarTodos(data);
+agregarCards(data);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
