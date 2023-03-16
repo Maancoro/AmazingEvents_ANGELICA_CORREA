@@ -2,18 +2,18 @@ const eventDiv = document.getElementById('contenedor');
 const categoriasData = document.getElementById('categoria');
 const busqueda = document.getElementById('search');
 
-const futureEvent = filtrarEventosFuturos(data);
+const pastEvents = filtrarEventosPasados(data);
 
 busqueda.addEventListener('input',()=>{
-  superFiltro(futureEvent,busqueda.value);
+  superFiltro(pastEvents,busqueda.value);
 });
 categoriasData.addEventListener('change',()=>{
-  superFiltro(futureEvent);
+  superFiltro(pastEvents);
 });
-mostrarEventos(futureEvent);
+mostrarEventos(pastEvents);
 mostrarCheck(listaDeCategorias(data.events));
 
-function filtrarEventosFuturos(lista){
-  let eventosFuturos = lista.events.filter((evento) => evento.date >= lista.currentDate)
-  return eventosFuturos;
+function filtrarEventosPasados(lista){
+  const eventosPasados = lista.events.filter((evento)=> evento.date < lista.currentDate)
+  return eventosPasados;
 }

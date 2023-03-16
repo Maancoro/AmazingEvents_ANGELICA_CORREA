@@ -1,40 +1,12 @@
-import data from "./data.js"
+const eventDiv = document.getElementById('contenedor');
+const categoriasData = document.getElementById('categoria');
+const busqueda = document.getElementById('search');
 
-function agregarCards(array) {
-  const cards = array.events.map((evento) => {
-    return `<div class="col">
-      <div class="card">
-        <img src=${evento.image} class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title"><b>${evento.name}</b></h5>
-          <p class="card-text"><b>${evento.date}</b></p>
-          <p class="card-text">${evento.description}</p>
-          <div class="footer-card d-flex">
-             <p><strong>Precio $${evento.price}</strong></p>
-            <a href="./details.html?id=${evento._id}" class="btn btn-primary">ver mas</a>
-          </div>
-        </div>
-      </div>
-    </div>`;
-  });
-  
-  const cardSection = document.getElementById("cardSection");
-  cardSection.innerHTML = cards.join("");
-}
-
-agregarCards(data);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+busqueda.addEventListener('input',()=>{
+  superFiltro(data.events,busqueda.value);
+});
+categoriasData.addEventListener('change',()=>{
+  superFiltro(data.events);
+});
+mostrarEventos(data.events);
+mostrarCheck(listaDeCategorias(data.events));
