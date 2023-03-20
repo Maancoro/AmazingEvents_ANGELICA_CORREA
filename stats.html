@@ -11,7 +11,7 @@
       <!--Favicon Mio-->
       <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
       <!--enlace con style-->
-      <link rel="stylesheet" type="text/css" href="style.css">
+      <link rel="stylesheet" type="text/css" href="./style.css">
       <title> Stats</title>
    </head>
    <body>
@@ -23,7 +23,7 @@
             <ul class="list-group list-group-horizontal">
                <li class="list-group-item"><a href="./index.html">HOME</a></li>
                <li class="list-group-item"><a href="./upcoming.html" >Upcoming Events</a></li>
-               <li class="list-group-item"><a href="./past-event.html" >Past Events</a></li>
+               <li class="list-group-item"><a href="./pastEvents.html" >Past Events</a></li>
                <li class="list-group-item"><a href="./contact-us.html" >Contact</a></li>
                <li class="list-group-item"><a href="#" >Stats</a></li>
             </ul>
@@ -35,107 +35,72 @@
          </div>
       </header>
       <main>
-       <table class="bg-body-tertiary">
-                    <fieldset>
-                        <thead>
-                            <tr>
-                                <th class="text-center" colspan="3">Events statistics</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Events with the highest percentage of attendance</td>
-                                <td>Events with the lowest percentage of attendance</td>
-                                <td>Event with larger capacity</td>
-                            </tr>
-                            <tr>
-                                <td>----</td>
-                                <td>----</td>
-                                <td>----</td>
-                            </tr>
-                        </tbody>
-                    </fieldset>
-                    <fieldset>
-                        <thead>
-                            <tr>
-                                <th class="text-center" colspan="3">Upcoming events statistics by category</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Categories</td>
-                                <td>Revenues</td>
-                                <td>Percentage of attendance</td>
-                            </tr>
-                            <tr>
-                                <td>----</td>
-                                <td>----</td>
-                                <td>----</td>
-                            </tr>
-                            <tr>
-                                <td>----</td>
-                                <td>----</td>
-                                <td>----</td>
-                            </tr>
-                            <tr>
-                                <td>----</td>
-                                <td>----</td>
-                                <td>----</td>
-                            </tr>
-                        </tbody>
-                    </fieldset>
-                    <fieldset>
-                        <thead>
-                            <tr>
-                                <th class="text-center" colspan="3">Past events statistics by category</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Categories</td>
-                                <td>Revenues</td>
-                                <td>Percentage of attendance</td>
-                            </tr>
-                            <tr>
-                                <td>----</td>
-                                <td>----</td>
-                                <td>----</td>
-                            </tr>
-                            <tr>
-                                <td>----</td>
-                                <td>----</td>
-                                <td>----</td>
-                            </tr>
-                            <tr>
-                                <td>----</td>
-                                <td>----</td>
-                                <td>----</td>
-                            </tr>
-                            <tr>
-                                <td>----</td>
-                                <td>----</td>
-                                <td>----</td>
-                            </tr>
-                            <tr>
-                                <td>----</td>
-                                <td>----</td>
-                                <td>----</td>
-                            </tr>
-                        </tbody>
-                    </fieldset>
-                </table>
+         <div class="container d-flex align-items-center p-3">
+            <div class="container-table">
+               <table class="table caption-top table-bordered">
+                  <thead>
+                     <tr>
+                        <th id="eventosPasados" class="text-center" colspan="3">Events statistics</th>
+                     </tr>
+                     <tr>
+                        <th scope="col">Events with the highest percentage of attendance</th>
+                        <th scope="col">Events with the lowest percentage of attendance</th>
+                        <th scope="col">Event with larger capacity</th>
+                     </tr>
+                  </thead>
+                  <tbody id="tabla1">
+                     <tr>
+                        <td>Metallica</td>
+                        <td>Jurassic Park</td>
+                        <td>15K NY</td>
+                     </tr>
+                  </tbody>
+               </table>
+               <table class="table caption-top table-bordered">
+                  <thead>
+                     <tr>
+                        <th id="eventosFuturos" class="text-center" colspan="3">Upcoming events statistics by category</th>
+                     </tr>
+                     <tr>
+                        <th scope="col">Categories</th>
+                        <th scope="col">Revenues</th>
+                        <th scope="col">Percentage of attendance</th>
+                     </tr>
+                  </thead>
+                  <tbody id="tabla2">
+                  </tbody>
+               </table>
+               <table class="table caption-top table-bordered">
+                  <thead>
+                     <tr>
+                        <th id="eventosPasados" class="text-center" colspan="3">Past events statistics by category</th>
+                     </tr>
+                     <tr>
+                        <th scope="col">Categories</th>
+                        <th scope="col">Revenues</th>
+                        <th scope="col">Percentage of attendance</th>
+                     </tr>
+                  </thead>
+                  <tbody id="tabla3">
+                  </tbody>
+               </table>
+            </div>
+         </div>
+         
       </main>
-     <footer>
+      <footer>
          <div class="redes-sociales">
             <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram fa-xl text-white"></i></a>
             <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook fa-xl text-white"></i></a>
             <a href="https://web.whatsapp.com/" target="_blank"><i class="fa-brands fa-whatsapp fa-xl text-white"></i></a>
          </div>
          <div class="autor">
-            <p >COHORT</p>
+            <h6><span>&#169</span>2023-Angélica Correa</h6>
          </div>
       </footer>
       <!--JavaScript Bundle with Popper-->
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+     
+      <script src="./scripts/stats.js"></script>
    </body>
 </html>

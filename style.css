@@ -7,18 +7,17 @@ body{
 }
 /*Items Botones*/
 nav {
-    background-color: #c790bc;margin
+    background-color: #c790bc;
 
 }
 .navbar{
-       --bs-navbar-padding-y: 2rem; 
+    --bs-navbar-padding-y: 2rem; 
 }
-footer .navbar.navbar-links.bg-ligth{
-    --bs-navbar-padding-y: 1rem; 
-}
+
+
 nav img{
     width:30%; 
-    height:;
+    
 }
 .list-group{
 
@@ -29,10 +28,16 @@ a{
     text-decoration: none;
     color: whitesmoke;
 }
+a.nav-link.mx-3{
+    text-decoration: none;
+    color: whitesmoke;
+}
 a:hover {
     color: #47063a;
 }
-
+a.nav-link.mx-3:hover{
+    color: #47063a;
+}
 
 
 /*  --- Header---- */
@@ -46,21 +51,31 @@ header{
 }
 header h1{
     text-align: center;
+    color:#47063a; 
+    text-shadow: 3px 6px 8px #47063a;
     padding: 1rem;
     margin: 1rem;
+    font-size: 4rem;
+    font-weight: bolder;
 }
 main{
     margin-top: 2rem;
 
 }
+main img.img-fluid {
+width: 30rem;
+height: 30rem;
+object-fit: cover;
+}
+
 main fieldset{
     display: flex;
     margin-top: 2rem;
     justify-content: space-between;
 
 }
-article {
-    margin-bottom: 20px;
+article h3 {
+    margin-bottom: 25px;
    
     background-color: #47063a;
     color: whitesmoke;
@@ -68,15 +83,16 @@ article {
 }
 
 main .bg-light{
-    box-shadow:0 0 2rem #a071af;
+    box-shadow:0 0 3rem #a071af;
 }
 
 
 .parrafo.text-center p {
-    padding: 10px;
+    color:black;
+    padding: 8px;
     margin-bottom: 25px;
-    line-height: 27px;
-    font-size: 14px;
+    line-height: 20px;
+    font-size: 20px;
 }
 .bg-body-tertiary{
     margin-top: 3rem;
@@ -89,13 +105,15 @@ main .bg-light{
     
 
   }
-  .table{
-    margin-top: 10rem;
+  main .table{
+    
     border: 1px solid black;
+    box-shadow: 0 0 3rem #a071af;
+
 }
     
   
-  th{
+  th#eventosPasados,th#eventosFuturos{
       background-color: #c790bc;
       padding: 0.6rem 1rem;
       font-weight: 500;
@@ -130,7 +148,26 @@ th, td {
     --bs-gradient: none;
 }
 
-/*-- fieldset y search---*/
+main a.btn.btn-primary{
+    color: white;
+    background-color:#47063a; ;
+      --bs-btn-color: #47063a;
+    --bs-btn-border-color: #47063a;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #c790bc;
+    --bs-btn-hover-border-color: #c790bc;
+    --bs-btn-focus-shadow-rgb: 25,135,84;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #47063a;
+    --bs-btn-active-border-color: #c790bc;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #c790bc;
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: #c790bc;
+    --bs-gradient: none;
+}
+
+
 .me-2 {
     border-color:#47063a ;
     border: 1px solid #c790bc
@@ -144,12 +181,19 @@ th, td {
 
 .card{
     margin-top: 4rem;
+    width: 18rem;
+    height: 30rem;
 
+}
+.card-img{
+    height:4rem;
+}
+img.card-img-top{
+    height: 12rem;
 }
 
 .btn-primary {
     margin-top: 1rem;
-    con
     --bs-btn-color: #fff;
     --bs-btn-bg: #47063a;
     --bs-btn-border-color: #c790bc;
@@ -171,8 +215,10 @@ th, td {
 .footer-card {
     display: flex;
     justify-content: space-around;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0rem;
+    
 }
+
 footer {
     margin-top: 30px;
     background-color: #c790bc;
