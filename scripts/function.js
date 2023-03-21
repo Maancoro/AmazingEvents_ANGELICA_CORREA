@@ -72,6 +72,7 @@ function filtrarPorCategoria(lista) {
 
   return listafiltrada;
 }
+
 function cardDetails(evento){
   let container = document.getElementById("cardDetails");
   let card = "";
@@ -89,18 +90,18 @@ function cardDetails(evento){
                 <p class="card-text"><strong>Category: </strong>${evento.category}</p>
                 <p class="card-text"><strong>Place:</strong> ${evento.place}</p>
                 <p class="card-text"><strong>Capacity:</strong> ${evento.capacity}</p>`;
-  if(evento.assistance != undefined){
-    card = card + `<p class="card-text"><strong>Assistance:</strong> ${evento.assistance}</p>`;
-  } else {
-    card = card + `<p class="card-text">Estimate: ${evento.estimate}</p`;
-  }
-  card = card + `
+          if(evento.assistance != undefined){
+          card = card + `<p class="card-text"><strong>Assistance:</strong> ${evento.assistance}</p>`;
+            } else {
+          card = card + `<p class="card-text">Estimate: ${evento.estimate}</p`;
+                }
+          card = card + `
               <p><strong>Precio $${evento.price}</strong></p>
             </div>
           </div >
         </div>`;
-  container.innerHTML = card;
-}
+       container.innerHTML = card;
+        }
 
 
 

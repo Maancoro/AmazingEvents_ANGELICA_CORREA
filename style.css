@@ -11,9 +11,11 @@ nav {
 
 }
 .navbar{
-    --bs-navbar-padding-y: 2rem; 
+    --bs-navbar-padding-y: 3rem; 
 }
-
+nav.navbar.navbar-expand-lg.navbar.bg-body-dark.border-bottom.shadow.bg{
+    --bs-navbar-padding-y: 3rem; 
+}
 
 nav img{
     width:30%; 
@@ -114,12 +116,16 @@ main .bg-light{
     
   
   th#eventosPasados,th#eventosFuturos{
-      background-color: #c790bc;
+      background-color: #47063a;
+      color: white;
       padding: 0.6rem 1rem;
       font-weight: 500;
       font-size: 1.5rem;
       letter-spacing: 0.1em;
       border-color: 2px solid #47063a;
+    }
+    th{
+        background-color: #a071af;
     }
 
 td {
@@ -229,6 +235,7 @@ footer {
     flex-wrap: nowrap;
     justify-content: space-between;
 }
+
 footer .redes-sociales a{
     color: white;
     margin-left: 20px;
@@ -236,6 +243,10 @@ footer .redes-sociales a{
 footer .autor p{
     color:black;
     margin-right: 20px;
+}
+footer h6{
+    color: black;
+    font-size: 1.2rem;
 }
 
 
