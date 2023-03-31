@@ -5,7 +5,7 @@ function superFiltro(lista) {
 }
 function mostrarEventos(lista) {
   if (lista.length == 0) {
-    eventDiv.innerHTML = "<h2> &#10060No results found</h2>";
+    eventDiv.innerHTML = "<h2 text-center> &#128683;  No hay coincidencias </h2>";
     return;
   }
   let cardHtml = "";
@@ -34,7 +34,7 @@ function mostrarCheck(lista) {
   lista.forEach((element) => {
     check += ` <div class="form-check form-check-inline">
         <input class="form-check-input" type="checkbox" id="${element}" value="${element}">
-        <label class="form-check-label" for="${element}">${element}</label>
+        <label class="form-check-label" for="${element}"><strong>${element}</strong></label>
       </div>`;
   });
   categoriasData.innerHTML = check;

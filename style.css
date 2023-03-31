@@ -189,6 +189,7 @@ main a.btn.btn-primary{
     margin-top: 4rem;
     width: 18rem;
     height: 30rem;
+    box-shadow: 0 0 3rem #47063a;
 
 }
 .card-img{
